@@ -1,0 +1,16 @@
+{
+  "name": "ev3_frontend",
+  "version": "0.0.1",
+  "description": "3ra evaluacion programación front end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "css",
+    "html"
+  ],
+  "author": "Tito Henrry Urrelo Aquino",
+  "license": "MIT"
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluacion 3</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"><h2 class="my-2">Estimación de Calorías Quemadas en Ejercicio</h2></div>
+            <div class="col-12">
+                <h5 class="alert-heading">¿Qué es la estimación de calorías quemadas en ejercicio?</h5>
+                <div class="alert alert-secondary" role="alert">
+                    <p>Es un cálculo que nos permite estimar cuántas calorías quema una persona al realizar actividad física, en este caso, caminar o correr.</p>
+                    <hr />
+                    <p>¿Para qué sirve?</p>
+                    <p>
+                        <ul>
+                            <li>Ayuda a las personas a entender el gasto energético de sus actividades.</li>
+                            <li>Es útil para planificar rutinas de ejercicio y dietas.</li>
+                            <li>Permite comparar la intensidad de diferentes actividades.</li>
+                        </ul>
+                    </p>
+                    <hr />
+                </div>
+            </div>
+        </div> 
+        
+        <div class="row">
+            <form id="formulario-imc" onsubmit="procesarformulario(event)">
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="peso" class="form-label">Peso (Kg)</label>
+                        <input type="number" step="0.01" class="form-control" id="peso" placeholder="Ej: 65.5" required>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="minutos" class="form-label">Tiempo ejercitado (Minutos)</label>
+                        <input type="number" step="0.01" class="form-control" id="minutos" placeholder="Ej: 70" required>
+                    </div>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="opciones" id="radioCaminar" value="option1" checked>
+                    <label class="form-check-label" for="radioCaminar">Caminar</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="opciones" id="radioCorrer" value="option2">
+                    <label class="form-check-label" for="radioCorrer">Correr</label>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" type="submit">Calcular</button>
+                </div>
+                <br/>
+                <div class="col-12">
+                    <div id="errores"></div>  
+                </div>  
+            </form>
+        </div>
+        <br/>
+        <div class="row mt-5" >
+            <div class="col-12">
+                <h3 class="text-primary">Resultado</h3>
+            </div>
+            <div class="col-12">
+                <div class="alert alert-primary" id="resultado" role="alert">
+                    Esperando el cálculo ...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
