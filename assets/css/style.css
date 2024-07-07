@@ -1,3 +1,48 @@
-#errores {
-    position: absolute;
+#errores div {
+    margin-bottom: 0px;
+}
+
+body {
+    background-color: #ebebeb;
+    color: #0080ff;
+
+}
+
+h2, h3 {
+    color: #0080ff;
+}
+
+.alert-heading {
+    color: #e74c3c;
+}
+
+.alert-secondary {
+    background-color: #ecf0f1;
+    color: #000000;
+    border-color: #bdc3c7;
+}
+
+.btn-primary {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+.form-check-label {
+    color: #2c3e50;
+}
+
+.form-control {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25);
 }
